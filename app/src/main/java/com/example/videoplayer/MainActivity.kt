@@ -2,6 +2,7 @@ package com.example.videoplayer
 
 
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.videoplayer.databinding.ActivityMainBinding
 import com.google.android.youtube.player.*
 
@@ -22,7 +23,7 @@ class MainActivity : YouTubeBaseActivity() {
                  youTubePlayer: YouTubePlayer,
                  bool: Boolean
              ) {
-                 youTubePlayer.cueVideo("W4hTJybfU7s")
+                 youTubePlayer.cueVideo("BTYAsjAVa3I")
 
              }
 
@@ -35,6 +36,16 @@ class MainActivity : YouTubeBaseActivity() {
 
         }
 
+
+       setRecyclerView()
+
+    }
+
+    private fun setRecyclerView() {
+        val list = listOf<String>("z44CLCafepA","z44CLCafepA","z44CLCafepA","z44CLCafepA","z44CLCafepA","z44CLCafepA")
+        val recyclerViewAdapter  = RecyclerViewAdapter(list)
+        binding.recyclerView.layoutManager = GridLayoutManager(this,2)
+        binding.recyclerView.adapter = recyclerViewAdapter
 
 
     }
