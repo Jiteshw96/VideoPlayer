@@ -21,7 +21,7 @@
             android:layout_marginEnd="10dp"
             android:hint="This is description of the video in videoplayer app"
             android:singleLine="false"
-            android:textSize="12dp"
+            android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/comments"
             app:layout_constraintStart_toStartOf="parent"
