@@ -24,14 +24,14 @@ class RecyclerViewAdapter(private val videos: List<String>): RecyclerView.Adapte
     override fun onBindViewHolder(holder: VideoViewHolder<YoutubeVideo>, position: Int) {
 
         val itemViewHolder = holder as VideoViewHolder
-        itemViewHolder.textView.text = "Hello"
+       // itemViewHolder.textView.text = "Hello"
 
         listener = object : YouTubeThumbnailView.OnInitializedListener{
             override fun onInitializationSuccess(
                 p0: YouTubeThumbnailView?,
                 loader: YouTubeThumbnailLoader?
             ) {
-                loader?.setVideo("BTYAsjAVa3I")
+                loader?.setVideo(videos.get(position))
             }
 
             override fun onInitializationFailure(
@@ -49,7 +49,7 @@ class RecyclerViewAdapter(private val videos: List<String>): RecyclerView.Adapte
     }
 
      class VideoViewHolder<YoutubeVideo>(var itemBinding:CardviewItemVideoBinding):RecyclerView.ViewHolder(itemBinding.root){
-         var textView:TextView = itemBinding.textView
+        // var textView:TextView = itemBinding.textView
          var youtubePlayer:YouTubeThumbnailView = itemBinding.youTubePlayerView
 
     }
