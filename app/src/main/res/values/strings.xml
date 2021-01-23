@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">VideoPlayer</string>
+    <string name="comment_1">Great source to learn new things</string>
+    <string name="comment_2">Finally an easy way to understand,thank you, helped me a lot</string>
+    <string name="comment_3">I watched many tutorials and it was so confusing. your tutorial made it very easy </string>
+    <string name="comment_4">Today I learn new thing in Android.</string>
+    <string name="comment_5">Exactly what I am looking for.</string>
 </resources>
